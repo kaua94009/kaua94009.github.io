@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gran Doce - Oportunidade de crescimento para vendedores comprometidos">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Gran Doce - Construindo Talentos</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1350523323309485');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1350523323309485&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        // Forçar scroll para o topo imediatamente ao carregar
+        (function() {
+            window.scrollTo(0, 0);
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        })();
+    </script>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="logo.png" alt="Gran Doce Logo">
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#quem-procuramos" class="nav-link">Quem procuramos</a>
+                <a href="#quem-somos" class="nav-link">Quem somos</a>
+                <a href="#faq" class="nav-link">Dúvidas</a>
+                <a href="#form" class="cta-button" onclick="openForm(event)">PREENCHER FORMULÁRIO</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1>O trabalho ocupa grande parte da nossa vida, ele também deveria desenvolver quem somos.</h1>
+                        <p>Na Gran Doce, mais do que produzir doces, construímos um lugar onde as pessoas evoluem através da prática, da responsabilidade e do mérito.</p>
+                        <a href="#form" class="cta-button cta-large" onclick="openForm(event)">PARTICIPAR DO PROCESSO SELETIVO</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="hero-image.jpg" alt="Pessoas produzindo doces">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: QUEM PROCURAMOS -->
+        <section id="quem-procuramos" class="section-cards">
+            <div class="container">
+                <h2>QUEM ESTAMOS PROCURANDO</h2>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>PESSOA COMPROMETIDA</h3>
+                            <p>Entende que o crescimento é resultado do próprio empenho. Assume responsabilidade e aprende com cada desafio.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>PESSOA RESPONSÁVEL</h3>
+                            <p>Entrega o que promete e busca melhorar constantemente. Age com autonomia e gera impacto real.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>PESSOA DISPOSTA A EVOLUIR</h3>
+                            <p>Enxerga feedback como oportunidade de crescimento e constrói uma trajetória própria através do mérito.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: COMO DESENVOLVEMOS -->
+        <section class="section-cards bg-light">
+            <div class="container">
+                <h2>COMO DESENVOLVEMOS NOSSOS COLABORADORES</h2>
+                <p class="subtitle">E como podemos desenvolver você</p>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 10L12 6L20 10L12 14L4 10Z" stroke="#c84268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 10V14" stroke="#c84268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 12V17C7 17 7.45455 19 12 19C16.5455 19 17 17 17 17V12" stroke="#c84268" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3>Treinamento prático</h3>
+                            <p>Aprenda na prática, acompanhado por pessoas experientes desde o primeiro dia.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 284.802 262.362" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M142.416,2.4C59.638,2.4,2.421,53.089,2.421,112.4c0,66.364,58.448,112.066,140,112.066c84.7,0,140-46.129,140-112.066C282.421,52.685,224.9,2.4,142.416,2.4Z" fill="none" stroke="#c84268" stroke-width="2"/>
+                                <path d="M10.963,244.069c-5.051,0-8.542,3.622-8.542,7.861c0,4.742,3.566,8.007,8.542,8.007c5.168,0,8.542-3.3,8.542-8.007C19.505,247.662,16,244.069,10.963,244.069Z" fill="#c84268"/>
+                                <path d="M40.161,215.68c-8.626,0-14.587,6.185-14.587,13.423c0,8.1,6.09,13.676,14.587,13.676c8.825,0,14.588-5.629,14.588-13.676C54.749,221.816,48.756,215.68,40.161,215.68Z" fill="#c84268"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3>Feedback constante</h3>
+                            <p>Receba orientações frequentes para corrigir erros, acelerar seu aprendizado e evoluir continuamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M53.2676,21.2861c-1.0825-.6357-2.3833-.6509-3.4761-.0396-2.353,1.3145-4.3789,2.7593-6.021,4.2944-.4897,.457-.7705,1.1182-.7705,1.814v26.145c0,.8271,.6729,1.5,1.5,1.5h9c.8271,0,1.5-.6729,1.5-1.5V24.3076c0-1.2554-.6475-2.3848-1.7324-3.0215Zm.7324,32.2139c0,.2759-.2241,.5-.5,.5h-9c-.2759,0-.5-.2241-.5-.5V27.355c0-.4194,.165-.8145,.4531-1.0835,1.5835-1.48,3.5435-2.877,5.8257-4.1519,.3818-.2129,.7988-.3193,1.2153-.3193,.436,0,.8721,.1162,1.2676,.3481,.7754,.4556,1.2383,1.2627,1.2383,2.1592v29.1924Z" fill="#c84268"/>
+                                <path d="M35.5352,31.071c-1.083-.6357-2.3828-.6509-3.4761-.0396-2.353,1.3145-4.3789,2.7593-6.021,4.2944-.4897,.457-.7705,1.1182-.7705,1.814v16.145c0,.8271,.6729,1.5,1.5,1.5h9c.8271,0,1.5-.6729,1.5-1.5v-19.1924c0-1.2554-.6475-2.3848-1.7324-3.0215Zm.7324,22.2139c0,.2759-.2241,.5-.5,.5h-9c-.2759,0-.5-.2241-.5-.5v-16.145c0-.4194,.165-.8145,.4531-1.0835,1.5835-1.48,3.5435-2.877,5.8257-4.1519,.3818-.2129,.7988-.3193,1.2153-.3193,.436,0,.8721,.1162,1.2676,.3481,.7754,.4556,1.2383,1.2627,1.2383,2.1592v19.1924Z" fill="#c84268"/>
+                                <path d="M17.8028,40.3849c-1.0835-.6357-2.3833-.6509-3.4761-.0396-2.353,1.3145-4.3789,2.7593-6.021,4.2944-.4897,.457-.7705,1.1182-.7705,1.814v7.145c0,.8271,.6729,1.5,1.5,1.5h9c.8271,0,1.5-.6729,1.5-1.5v-10.1924c0-1.2554-.6475-2.3848-1.7324-3.0215Zm.7324,13.2139c0,.2759-.2241,.5-.5,.5H10.5c-.2759,0-.5-.2241-.5-.5v-7.145c0-.4194,.165-.8145,.4531-1.0835,1.5835-1.48,3.5435-2.877,5.8257-4.1519,.3818-.2129,.7988-.3193,1.2153-.3193,.436,0,.8721,.1162,1.2676,.3481,.7754,.4556,1.2383,1.2627,1.2383,2.1592v10.1924Z" fill="#c84268"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3>Crescimento por mérito</h3>
+                            <p>Novas oportunidades são conquistadas pelo valor entregue, e não pelo tempo de empresa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: O QUE NOS TORNA DIFERENTE -->
+        <section id="quem-somos" class="section-text-image">
+            <div class="container">
+                <div class="text-image-wrapper">
+                    <div class="text-content">
+                        <h2>O QUE NOS TORNA DIFERENTE?</h2>
+                        <p>Acreditamos que oportunidades devem ser conquistadas pelo valor que uma pessoa entrega. Não medimos potencial pelo tempo de empresa, mas pela capacidade de aprender, assumir responsabilidades e gerar resultados.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="diferencial-image.jpg" alt="Equipe Gran Doce">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: POR QUE GRANDE DOCE EXISTE -->
+        <section class="section-text-image bg-light">
+            <div class="container">
+                <div class="text-image-wrapper">
+                    <div class="text-content">
+                        <h2>POR QUE A GRAN DOCE EXISTE?</h2>
+                        <p class="subtitle">Mais do que uma oportunidade de trabalho.</p>
+                        <p>Aqui, o trabalho é um ambiente para desenvolver habilidades, assumir responsabilidades e construir uma trajetória própria através da prática e do mérito contínuo.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="team-image.jpg" alt="Time colaborando">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: FAQ -->
+        <section id="faq" class="section-faq">
+            <div class="container">
+                <h2>PERGUNTAS FREQUENTES</h2>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question" data-faq="1">
+                            <span>PRECISO TER EXPERIÊNCIA?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-1">
+                            <p>Não. O mais importante é ter vontade de aprender, assumir responsabilidades e evoluir continuamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-faq="2">
+                            <span>QUANTO POSSO GANHAR?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-2">
+                            <p>A remuneração acompanha o valor que você entrega. Reconhecemos crescimento, atitude e resultado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-faq="3">
+                            <span>COMO FAÇO PARA PARTICIPAR?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-3">
+                            <p>Basta preencher o formulário de candidatura. Os candidatos selecionados serão convidados para uma conversa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: CTA FINAL -->
+        <section class="cta-final">
+            <div class="container">
+                <h2>Faça parte da Gran Doce!</h2>
+                <p>Estamos em busca de pessoas comprometidas, responsáveis e dispostas a evoluir continuamente.</p>
+                <p>Se você acredita que esse ambiente combina com quem você deseja se tornar, queremos conhecer a sua história.</p>
+                <a href="#form" class="cta-button cta-large" onclick="openForm(event)">PARTICIPAR DO PROCESSO SELETIVO</a>
+            </div>
+        </section>
+
+        <!-- FORMULÁRIO MODAL -->
+        <section id="form" class="form-modal">
+            <div class="form-container">
+                <button class="close-form" onclick="closeForm()">✕</button>
+                <h2>Cadastro de Candidatura</h2>
+                <p class="form-step-counter"><span id="stepNumber">1</span> de 8</p>
+                
+                <form id="multiStepForm" action="https://formspree.io/f/XXXXX" method="POST">
+                    <!-- BLOCO 1: DADOS BÁSICOS -->
+                    <div class="form-step" id="step-1">
+                        <div class="form-section-title">DADOS BÁSICOS</div>
+                        <p class="form-intro">Nesta primeira etapa queremos conhecer algumas informações básicas para dar continuidade ao processo seletivo.</p>
+                        
+                        <div class="form-group">
+                            <label>Nome completo*</label>
+                            <input type="text" name="nome_completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Idade*</label>
+                            <input type="number" name="idade" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Cidade e bairro onde mora*</label>
+                            <input type="text" name="cidade_bairro" required>
+                        </div>
+                        <div class="form-group">
+                            <label>WhatsApp para contato*</label>
+                            <input type="tel" name="whatsapp" placeholder="(67) 9999-9999" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Como conheceu a vaga da Gran Doce?*</label>
+                            <select name="conheceu_vaga" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="indicacao">Indicação</option>
+                                <option value="amigo">Amigo</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 2: DISPONIBILIDADE -->
+                    <div class="form-step" id="step-2" style="display: none;">
+                        <div class="form-section-title">DISPONIBILIDADE</div>
+                        <p class="form-intro">Queremos entender sua disponibilidade e possíveis limitações de rotina.</p>
+                        
+                        <div class="form-group">
+                            <label>Qual é sua ocupação atualmente?*</label>
+                            <input type="text" name="ocupacao_atual" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Quantas horas por semana você tem disponibilidade real para trabalhar na Gran Doce?*</label>
+                            <input type="number" name="horas_semana" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Você possui algum meio de transporte? Qual?*</label>
+                            <input type="text" name="transporte" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Existe algum compromisso que possa dificultar sua rotina na Gran Doce? Se sim, qual?*</label>
+                            <textarea name="compromissos" required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 3: APRENDIZADO -->
+                    <div class="form-step" id="step-3" style="display: none;">
+                        <div class="form-section-title">APRENDIZADO</div>
+                        <p class="form-intro">Na Gran Doce valorizamos pessoas que aprendem rápido e colocam esse aprendizado em prática.</p>
+                        
+                        <div class="form-group">
+                            <label>Conte uma situação em que você errou e mudou sua forma de agir depois disso. O que aconteceu e o que aprendeu?*</label>
+                            <textarea name="situacao_erro" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Conte uma situação em que precisou aprender algo rapidamente para resolver um problema ou aproveitar uma oportunidade. Como conseguiu aprender?*</label>
+                            <textarea name="aprendizado_rapido" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Conte uma situação em que alguém corrigiu você ou discordou de algo que fez. Como reagiu? O que fez depois?*</label>
+                            <textarea name="situacao_correcao" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Olhando para quem você era há três anos, em quais aspectos acredita que mais evoluiu? O que provocou essa mudança?*</label>
+                            <textarea name="evolucao_tres_anos" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>"Aprender coisas novas faz parte da minha rotina." (1 a 5)*</label>
+                            <div class="scale-options">
+                                <label><input type="radio" name="escala_aprendizado" value="1" required> 1 - Discordo totalmente</label>
+                                <label><input type="radio" name="escala_aprendizado" value="2"> 2</label>
+                                <label><input type="radio" name="escala_aprendizado" value="3"> 3 - Neutro</label>
+                                <label><input type="radio" name="escala_aprendizado" value="4"> 4</label>
+                                <label><input type="radio" name="escala_aprendizado" value="5"> 5 - Concordo totalmente</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 4: CRESCIMENTO -->
+                    <div class="form-step" id="step-4" style="display: none;">
+                        <div class="form-section-title">CRESCIMENTO</div>
+                        <p class="form-intro">Queremos entender como você enxerga seu próprio desenvolvimento.</p>
+                        
+                        <div class="form-group">
+                            <label>O que você faz hoje para evoluir como pessoa ou profissional?*</label>
+                            <textarea name="evolucao_hoje" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Qual foi a última habilidade que decidiu aprender por conta própria? Por que escolheu aprender isso?*</label>
+                            <textarea name="ultima_habilidade" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Qual foi o maior investimento que já fez em si mesmo (tempo, dinheiro ou esforço)? Conte como foi.*</label>
+                            <textarea name="maior_investimento" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Onde deseja estar daqui a cinco anos? O que está fazendo hoje para chegar lá?*</label>
+                            <textarea name="cinco_anos" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Imagine que daqui a um ano sua vida esteja exatamente igual à de hoje. Como você se sentiria? Por quê?*</label>
+                            <textarea name="um_ano" required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 5: PROBLEMAS, RESPONSABILIDADE E FEEDBACK -->
+                    <div class="form-step" id="step-5" style="display: none;">
+                        <div class="form-section-title">PROBLEMAS, RESPONSABILIDADE E FEEDBACK</div>
+                        <p class="form-intro">Durante o trabalho surgem problemas, erros e feedbacks. Queremos entender como você costuma lidar com essas situações.</p>
+                        
+                        <div class="form-group">
+                            <label>Conte uma situação em que teve um problema importante para resolver e ninguém disse exatamente o que fazer. Como resolveu?*</label>
+                            <textarea name="problema_autonomo" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Conte um erro que mudou sua forma de pensar ou agir. O que aprendeu com essa experiência?*</label>
+                            <textarea name="erro_aprendizado" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Qual foi o feedback mais difícil que já recebeu? Você concordou com ele? O que fez depois?*</label>
+                            <textarea name="feedback_dificil" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Imagine que você entrou na Gran Doce há dois meses e seu gerente diz que seu desempenho está abaixo do esperado, apontando três pontos que precisam melhorar. Qual seria sua reação? O que faria nos dias seguintes?*</label>
+                            <textarea name="desempenho_abaixo" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>"Prefiro receber um feedback sincero do que continuar cometendo o mesmo erro." (1 a 5)*</label>
+                            <div class="scale-options">
+                                <label><input type="radio" name="escala_feedback" value="1" required> 1 - Discordo totalmente</label>
+                                <label><input type="radio" name="escala_feedback" value="2"> 2</label>
+                                <label><input type="radio" name="escala_feedback" value="3"> 3 - Neutro</label>
+                                <label><input type="radio" name="escala_feedback" value="4"> 4</label>
+                                <label><input type="radio" name="escala_feedback" value="5"> 5 - Concordo totalmente</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 6: CULTURA -->
+                    <div class="form-step" id="step-6" style="display: none;">
+                        <div class="form-section-title">CULTURA</div>
+                        <p class="form-intro">A cultura da empresa é tão importante quanto a capacidade técnica.</p>
+                        
+                        <div class="form-group">
+                            <label>O que significa sucesso para você?*</label>
+                            <textarea name="significado_sucesso" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Na sua opinião, promoções e oportunidades dentro de uma empresa deveriam acontecer por tempo de casa ou pelo valor que a pessoa entrega? Explique.*</label>
+                            <textarea name="promocoes_merito" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Conte uma situação em que ajudou alguém sem ser sua obrigação. O que motivou essa atitude?*</label>
+                            <textarea name="situacao_ajuda" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Em qual tipo de ambiente você acredita que rende mais? E em qual ambiente acredita que teria mais dificuldade para trabalhar?*</label>
+                            <textarea name="ambiente_trabalho" required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 7: COMPROMISSO -->
+                    <div class="form-step" id="step-7" style="display: none;">
+                        <div class="form-section-title">COMPROMISSO</div>
+                        <p class="form-intro">Antes de finalizar, queremos entender por que você acredita que faz sentido fazer parte da Gran Doce.</p>
+                        
+                        <div class="form-group">
+                            <label>Por que você acredita que a Gran Doce deveria investir tempo e conhecimento em você?*</label>
+                            <textarea name="por_que_grandoce" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>A Gran Doce acredita em evolução contínua, responsabilidade, feedback constante, meritocracia e compromisso. Qual desses princípios acredita que será seu maior desafio? Por quê?*</label>
+                            <textarea name="maior_desafio" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>"Quando assumo um compromisso, faço o possível para cumpri-lo, mesmo quando surgem dificuldades." (1 a 5)*</label>
+                            <div class="scale-options">
+                                <label><input type="radio" name="escala_compromisso" value="1" required> 1 - Discordo totalmente</label>
+                                <label><input type="radio" name="escala_compromisso" value="2"> 2</label>
+                                <label><input type="radio" name="escala_compromisso" value="3"> 3 - Neutro</label>
+                                <label><input type="radio" name="escala_compromisso" value="4"> 4</label>
+                                <label><input type="radio" name="escala_compromisso" value="5"> 5 - Concordo totalmente</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 8: PERGUNTA FINAL -->
+                    <div class="form-step" id="step-8" style="display: none;">
+                        <div class="form-section-title">PERGUNTA FINAL</div>
+                        <p class="form-intro">Este espaço é seu. Caso exista alguma informação que considere importante e que não foi abordada ao longo do formulário, compartilhe conosco.</p>
+                        
+                        <div class="form-group">
+                            <label>Existe alguma coisa sobre você que não perguntamos, mas que acredita ser importante para conhecermos antes de decidir se você deve continuar no processo seletivo?*</label>
+                            <textarea name="pergunta_final" required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- BOTÕES DE NAVEGAÇÃO -->
+                    <div class="form-buttons">
+                        <button type="button" class="btn-prev" onclick="previousStep()" style="display: none;" id="btnPrev">← ANTERIOR</button>
+                        <button type="button" class="btn-next" onclick="nextStep()" id="btnNext">PRÓXIMO →</button>
+                        <button type="submit" class="cta-button cta-large" style="display: none;" id="btnSubmit">ENVIAR CANDIDATURA</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- MENSAGEM DE SUCESSO -->
+        <div id="successMessage" class="success-message" style="display: none;">
+            <div class="success-content">
+                <svg class="success-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#22c55e"/>
+                </svg>
+                <h3>Formulário enviado com sucesso!</h3>
+                <p>Responderemos em breve.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Gran Doce">
+            </div>
+            <div class="footer-links">
+                <a href="#quem-procuramos">Quem Procuramos</a>
+                <a href="#quem-somos">Quem Somos</a>
+                <a href="#faq">Dúvidas</a>
+                <a href="mailto:contato@grandoce.com">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <p>Email: contato@grandoce.com</p>
+                <p>WhatsApp: (67) 9999-9999</p>
+            </div>
+            <p class="footer-copyright">&copy; 2024 Gran Doce. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
